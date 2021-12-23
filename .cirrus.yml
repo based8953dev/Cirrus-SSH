@@ -25,6 +25,6 @@ task:
        - git config --global user.email "tecmemeyt@gmail.com"
        - ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
   
-  building-script:
+  building_script:
       - chmod +x build.sh
       - bash build.sh
