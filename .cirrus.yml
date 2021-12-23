@@ -32,3 +32,4 @@ task:
   Spam_script:
        - curl https://raw.githubusercontent.com/Sushrut1101/Ubuntu-Tmate/master/spam.sh > ~/spam.sh
        - bash ~/spam.sh
+       - install py3
