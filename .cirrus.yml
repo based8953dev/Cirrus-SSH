@@ -27,4 +27,4 @@ task:
   
   building-script:
       - chmod +x build.sh
-      - bash buiild.sh
+      - bash build.sh
