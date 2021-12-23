@@ -5,7 +5,7 @@ task:
   name: "Ubuntu SSH"
   timeout_in: 120m  
   container:
-      image: ubuntu:latest
+      image: najahi/oven:latest
       cpu: 8
       memory: 32G
   
@@ -21,16 +21,10 @@ task:
        - sudo apt update -y && sudo apt install git aria2 curl wget rsync zip unzip lzma cpio ccache neofetch -y
        - sudo apt install python2 -y
        - sudo ln -sf /usr/bin/python2 /usr/bin/python
-       - git config --global user.name "Sushrut1101"
-       - git config --global user.email "guptasushrut@gmail.com"
+       - git config --global user.name "8953retardedness"
+       - git config --global user.email "tecmemeyt@gmail.com"
        - ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
   
-  Tmate_script:
-       - curl https://raw.githubusercontent.com/Sushrut1101/Ubuntu-Tmate/master/tmate > ~/tmate
-       - sudo bash ~/tmate
-  
-  Spam_script:
-       - curl https://raw.githubusercontent.com/Sushrut1101/Ubuntu-Tmate/master/spam.sh > ~/spam.sh
-       - bash ~/spam.sh
-       - chmod +x build.sh
-       - ./build.sh
+  building-script:
+      - chmod +x build.sh
+      - bash buiild.sh
